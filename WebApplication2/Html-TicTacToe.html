@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8" />
+
+    <!-- Titel der Seite -->
+    <title>Tic-Tac-Toe mit Canvas</title>
+
+    <!-- CSS für einfaches Layout -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+
+        /* Canvas-Design */
+        canvas {
+            border: 1px solid black;
+            display: block;
+            margin: 0 auto 15px auto;
+        }
+
+        /* Statusanzeige */
+        #status {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* Ergebnisliste */
+        #resultList {
+            margin-top: 15px;
+        }
+    </style>
+
+    <!-- JavaScript wird nach dem Laden des DOM ausgeführt -->
+    <script defer src="JavaScript.js"></script>
+
+</head>
+<body>
+
+    <!-- Überschrift -->
+    <h1>Tic-Tac-Toe</h1>
+
+    <!-- Canvas-Element (Zeichenfläche) -->
+    <canvas id="myCanvas" width="300" height="300"></canvas>
+
+    <!-- Anzeige des aktuellen Spielers -->
+    <p id="status">Aktueller Spieler: X</p>
+
+    <!-- Button zum Neustarten -->
+    <button id="btnNewGame">Neue Runde</button>
+
+    <!-- Liste für Ergebnisse -->
+    <h2>Ergebnisse</h2>
+    <ul id="resultList"></ul>
+
+</body>
+</html>
